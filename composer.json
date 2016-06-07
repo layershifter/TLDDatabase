@@ -1,0 +1,12 @@
+{
+  "name": "layershifter/TLDDatabase",
+  "description": "Database absraction for Public Suffix List",
+  "minimum-stability": "dev",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Alexander Fedyashov",
+      "email": "a@fedyashov.com"
+    }
+  ]
+}
