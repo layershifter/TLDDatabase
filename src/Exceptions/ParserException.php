@@ -8,12 +8,12 @@
  * @license   https://raw.githubusercontent.com/layershifter/TLDDatabase/master/LICENSE Apache 2.0 License
  */
 
-namespace LayerShifter\TLDExtract\Exceptions;
+namespace LayerShifter\TLDDatabase\Exceptions;
 
 /**
  * Parser exception.
  */
-class ParserException extends Exception
+final class ParserException extends Exception
 {
 
 }

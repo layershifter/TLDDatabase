@@ -8,7 +8,7 @@
  * @license   https://raw.githubusercontent.com/layershifter/TLDDatabase/master/LICENSE Apache 2.0 License
  */
 
-namespace LayerShifter\TLDExtract\Exceptions;
+namespace LayerShifter\TLDDatabase\Exceptions;
 
 /**
  * Base exception.
