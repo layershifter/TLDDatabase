@@ -1,12 +1,21 @@
 {
   "name": "layershifter/TLDDatabase",
   "description": "Database absraction for Public Suffix List",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "license": "Apache-2.0",
   "authors": [
     {
       "name": "Alexander Fedyashov",
       "email": "a@fedyashov.com"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "LayerShifter\\TLDDatabase\\": "src/"
+    }
+  },
+  "require": {
+    "layershifter/tld-support": "^0.1.1",
+    "ext-curl": "*"
+  }
 }
