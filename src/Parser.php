@@ -10,7 +10,7 @@
 
 namespace LayerShifter\TLDDatabase;
 
-use LayerShifter\TLDExtract\Exceptions\ParserException;
+use LayerShifter\TLDDatabase\Exceptions\ParserException;
 use LayerShifter\TLDSupport\Helpers\Str;
 
 /**
@@ -82,7 +82,7 @@ final class Parser
                 continue;
             }
 
-            $suffixes[] = $line;
+            $suffixes[$line] = $this->isICCANSuffix ? Store::TYPE_ICCAN : Store::TYPE_PRIVATE;
         }
 
         if (count($suffixes) === 0) {
