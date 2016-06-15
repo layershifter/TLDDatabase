@@ -49,7 +49,7 @@ class Update
          * Defining output filename.
          * */
 
-        $this->outputFileName = $outputFileName === null
+        $this->outputFileName = null === $outputFileName
             ? __DIR__ . Store::DATABASE_FILE
             : $outputFileName;
 
