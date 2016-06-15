@@ -19,20 +19,13 @@ interface AdapterInterface
 {
 
     /**
-     * AdapterInterface constructor.
+     * Fetches Public Suffix List file and returns its content as array of strings.
      *
      * @param string $url URL of Public Suffix List file.
-     *
-     * @throws HttpException
-     */
-    public function __construct($url);
-
-    /**
-     * Fetches Public Suffix List file and returns its content as array of strings.
      *
      * @return array|string[]
      *
      * @throws HttpException
      */
-    public function get();
+    public function get($url);
 }
