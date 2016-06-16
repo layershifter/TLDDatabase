@@ -20,7 +20,7 @@
     }
   },
   "require": {
-    "layershifter/tld-support": "^0.1.1",
+    "layershifter/tld-support": "^1.0.0",
     "ext-curl": "*"
   },
   "require-dev": {
