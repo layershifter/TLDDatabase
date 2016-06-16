@@ -82,7 +82,7 @@ class Store
      *
      * @param string $suffix Suffix which type will be checked.
      *
-     * @return bool
+     * @return int
      *
      * @throws StoreException
      */

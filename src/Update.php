@@ -120,4 +120,3 @@ class Update
         fclose($handle);
     }
 }
-
