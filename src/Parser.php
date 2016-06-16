@@ -41,9 +41,15 @@ final class Parser
      * Parser constructor.
      *
      * @param array|string[] $lines Array of lines from Public Suffix List
+     *
+     * @throws ParserException
      */
     public function __construct($lines)
     {
+        if (!is_array($lines)) {
+            throw new ParserException('Invalid argument type, expecting array');
+        }
+
         $this->lines = $lines;
     }
 
