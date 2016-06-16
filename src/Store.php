@@ -86,7 +86,7 @@ class Store
      *
      * @throws StoreException
      */
-    public function isICCAN($suffix)
+    public function getType($suffix)
     {
         if (!array_key_exists($suffix, $this->suffixes)) {
             throw new StoreException(sprintf(
@@ -96,7 +96,19 @@ class Store
             ));
         }
 
-        return $this->suffixes[$suffix] === self::TYPE_ICCAN;
+        return $this->suffixes[$suffix];
+    }
+
+    /**
+     * Checks type of suffix entry. Returns true if suffix is ICCAN TLD zone.
+     *
+     * @param string $suffix Suffix which type will be checked.
+     *
+     * @return bool
+     */
+    public function isICCAN($suffix)
+    {
+        return $this->getType($suffix) === self::TYPE_ICCAN;
     }
 
     /**
@@ -105,19 +117,9 @@ class Store
      * @param string $suffix Suffix which type will be checked.
      *
      * @return bool
-     *
-     * @throws StoreException
      */
     public function isPrivate($suffix)
     {
-        if (!array_key_exists($suffix, $this->suffixes)) {
-            throw new StoreException(sprintf(
-                'Provided suffix (%s) does not exists in database, check existence of entry with isExists() method ' .
-                'before',
-                $suffix
-            ));
-        }
-
-        return $this->suffixes[$suffix] === self::TYPE_PRIVATE;
+        return $this->getType($suffix) === self::TYPE_PRIVATE;
     }
 }
