@@ -82,4 +82,22 @@ class CurlAdapterTest extends \PHPUnit_Framework_TestCase
         self::assertGreaterThan(0, count($validResponse));
         self::assertArrayHasKey(0, $validResponse);
     }
+
+    /**
+     * Test for valid response.
+     *
+     * @return void
+     */
+    public function testGetForWindows()
+    {
+        if (!defined('PHP_WINDOWS_VERSION_MAJOR')) {
+            define('PHP_WINDOWS_VERSION_MAJOR', 10);
+        }
+
+        $validResponse = $this->adapter->get('http://www.google.com/robots.txt');
+
+        self::assertInternalType('array', $validResponse);
+        self::assertGreaterThan(0, count($validResponse));
+        self::assertArrayHasKey(0, $validResponse);
+    }
 }
