@@ -64,7 +64,7 @@ class ParserTest extends \PHPUnit_Framework_TestCase
      */
     public function testParse()
     {
-        $sampleData = explode(PHP_EOL, file_get_contents(__DIR__ . '/sample-list.txt'));
+        $sampleData = preg_split('/[\n\r]+/', file_get_contents(__DIR__ . '/sample-list.txt'));
 
         $parser = new Parser($sampleData);
         $result = $parser->parse();
