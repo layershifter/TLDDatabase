@@ -1,5 +1,5 @@
 {
-  "name": "layershifter/TLDDatabase",
+  "name": "layershifter/tld-database",
   "description": "Database abstraction for Public Suffix List",
   "minimum-stability": "stable",
   "license": "Apache-2.0",

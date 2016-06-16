@@ -2,7 +2,7 @@
 
 Abstraction layer for [Public Suffix List](https://publicsuffix.org/) in PHP. Used by [TLDExtract](https://github.com/layershifter/TLDExtract).
 
-[![Build Status](https://travis-ci.org/layershifter/TLDDatabase.svg)](https://travis-ci.org/layershifter/TLDDatabase) [![Code Climate](https://codeclimate.com/github/layershifter/TLDDatabase/badges/gpa.svg)](https://codeclimate.com/github/layershifter/TLDDatabase) [![Test Coverage](https://codeclimate.com/github/layershifter/TLDDatabase/badges/coverage.svg)](https://codeclimate.com/github/layershifter/TLDDatabase/coverage) [![PHP 7 ready](http://php7ready.timesplinter.ch/layershifter/TLDDatabase/master/badge.svg)](https://travis-ci.org/layershifter/TLDDatabase})
+[![Build Status](https://travis-ci.org/layershifter/TLDDatabase.svg)](https://travis-ci.org/layershifter/TLDDatabase) [![Code Climate](https://codeclimate.com/github/layershifter/TLDDatabase/badges/gpa.svg)](https://codeclimate.com/github/layershifter/TLDDatabase) [![Test Coverage](https://codeclimate.com/github/layershifter/TLDDatabase/badges/coverage.svg)](https://codeclimate.com/github/layershifter/TLDDatabase/coverage) [![PHP 7 ready](http://php7ready.timesplinter.ch/layershifter/TLDDatabase/master/badge.svg)](https://travis-ci.org/layershifter/TLDDatabase)
 
 ---
 
