@@ -1,6 +1,6 @@
 {
   "name": "layershifter/TLDDatabase",
-  "description": "Database absraction for Public Suffix List",
+  "description": "Database abstraction for Public Suffix List",
   "minimum-stability": "stable",
   "license": "Apache-2.0",
   "authors": [
@@ -14,8 +14,19 @@
       "LayerShifter\\TLDDatabase\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "LayerShifter\\TLDDatabase\\Tests\\": "tests/"
+    }
+  },
   "require": {
     "layershifter/tld-support": "^0.1.1",
     "ext-curl": "*"
+  },
+  "require-dev": {
+    "codeclimate/php-test-reporter": "dev-master",
+    "phpmd/phpmd": "@stable",
+    "phpunit/phpunit": "4.8.*",
+    "squizlabs/php_codesniffer": "2.*"
   }
 }
