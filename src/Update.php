@@ -81,7 +81,7 @@ class Update
      *
      * @throws IOException
      */
-    public function update()
+    public function run()
     {
         /*
          * Fetching Public Suffix List and parse suffixes.
