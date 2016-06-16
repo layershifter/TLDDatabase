@@ -2,5 +2,7 @@
 .idea/
 
 # PHP specific
+build/
 vendor/
+composer.lock
 composer.phar
