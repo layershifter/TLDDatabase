@@ -106,17 +106,14 @@ class Update
             throw new Exceptions\IOException(sprintf('Cannot obtain lock to output file (%s)', $this->outputFileName));
         }
 
-        $filePrefix = '<?php' . PHP_EOL . 'return ';
-        $fileSuffix = ';';
+        $suffixFile = '<?php' . PHP_EOL . 'return ' . var_export($suffixes, true) . ';';
+        $writtenBytes = fwrite($handle, $suffixFile);
 
-        if (fwrite($handle, $filePrefix . var_export($suffixes, true) . $fileSuffix) === false) {
+        if ($writtenBytes === false || $writtenBytes !== strlen($suffixFile)) {
             throw new Exceptions\IOException(sprintf('Write to output file (%s) failed', $this->outputFileName));
         }
 
-        if (!flock($handle, LOCK_UN)) {
-            throw new Exceptions\IOException(sprintf('Cannot release lock to output file (%s)', $this->outputFileName));
-        }
-
+        flock($handle, LOCK_UN);
         fclose($handle);
     }
 }
