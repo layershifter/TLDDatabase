@@ -7278,6 +7278,7 @@ return array (
   'zippo' => 1,
   'zone' => 1,
   'zuerich' => 1,
+  'beep.pl' => 2,
   '*.compute.estate' => 2,
   '*.alces.network' => 2,
   'cloudfront.net' => 2,
