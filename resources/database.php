@@ -7326,6 +7326,7 @@ return array (
   'myfritz.net' => 2,
   'betainabox.com' => 2,
   'boxfuse.io' => 2,
+  'mycd.eu' => 2,
   'ae.org' => 2,
   'ar.com' => 2,
   'br.com' => 2,
