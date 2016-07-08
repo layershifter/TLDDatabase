@@ -1,6 +1,12 @@
 {
   "name": "layershifter/tld-database",
   "description": "Database abstraction for Public Suffix List",
+  "keywords": [
+    "PSL",
+    "Public Suffix List",
+    "domain database",
+    "tld database"
+  ],
   "minimum-stability": "stable",
   "license": "Apache-2.0",
   "authors": [
@@ -9,16 +15,6 @@
       "email": "a@fedyashov.com"
     }
   ],
-  "autoload": {
-    "psr-4": {
-      "LayerShifter\\TLDDatabase\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "LayerShifter\\TLDDatabase\\Tests\\": "tests/"
-    }
-  },
   "require": {
     "layershifter/tld-support": "^1.0.0",
     "ext-curl": "*"
@@ -29,5 +25,18 @@
     "phpmd/phpmd": "@stable",
     "phpunit/phpunit": "4.8.*",
     "squizlabs/php_codesniffer": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "LayerShifter\\TLDDatabase\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LayerShifter\\TLDDatabase\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
   }
 }
