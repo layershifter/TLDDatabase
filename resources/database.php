@@ -7391,6 +7391,8 @@ return array (
   'dnshome.de' => 2,
   'dreamhosters.com' => 2,
   'mydrobo.com' => 2,
+  'drud.io' => 2,
+  'drud.us' => 2,
   'duckdns.org' => 2,
   'dy.fi' => 2,
   'tunk.org' => 2,
