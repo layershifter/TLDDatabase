@@ -17,7 +17,8 @@
   ],
   "require": {
     "layershifter/tld-support": "^1.0.0",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "php": ">=5.5.0"
   },
   "require-dev": {
     "codeclimate/php-test-reporter": "dev-master",
