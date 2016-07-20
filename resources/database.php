@@ -7324,6 +7324,7 @@ return array (
   'potager.org' => 2,
   'sweetpepper.org' => 2,
   'myfritz.net' => 2,
+  'backplaneapp.io' => 2,
   'betainabox.com' => 2,
   'boxfuse.io' => 2,
   'mycd.eu' => 2,
