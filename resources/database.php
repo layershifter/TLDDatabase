@@ -7761,6 +7761,7 @@ return array (
   '*.ext.githubcloud.com' => 2,
   'gist.githubcloud.com' => 2,
   '*.githubcloudusercontent.com' => 2,
+  'gitlab.io' => 2,
   'ro.com' => 2,
   'goip.de' => 2,
   '*.0emm.com' => 2,
