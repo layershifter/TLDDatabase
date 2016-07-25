@@ -115,6 +115,15 @@ Via Composer
 $ composer require layershifter/tld-database
 ```
 
+## Testing
+``` bash
+$ composer test
+```
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
+
 ## License
 
 This library is released under the Apache 2.0 license. Please see [License File](LICENSE) for more information.
