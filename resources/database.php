@@ -7327,6 +7327,7 @@ return array (
   'backplaneapp.io' => 2,
   'betainabox.com' => 2,
   'boxfuse.io' => 2,
+  'browsersafetymark.io' => 2,
   'mycd.eu' => 2,
   'ae.org' => 2,
   'ar.com' => 2,
