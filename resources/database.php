@@ -7996,6 +7996,7 @@ return array (
   'dev.static.land' => 2,
   'sites.static.land' => 2,
   'spacekit.io' => 2,
+  'stackspace.space' => 2,
   'diskstation.me' => 2,
   'dscloud.biz' => 2,
   'dscloud.me' => 2,
