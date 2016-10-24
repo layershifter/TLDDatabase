@@ -7776,6 +7776,7 @@ return array (
   'fbxos.fr' => 2,
   'freebox-os.fr' => 2,
   'freeboxos.fr' => 2,
+  'myfusion.cloud' => 2,
   'futuremailing.at' => 2,
   '*.ex.ortsinfo.at' => 2,
   '*.kunden.ortsinfo.at' => 2,
