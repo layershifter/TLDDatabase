@@ -8068,6 +8068,8 @@ return array (
   'static.land' => 2,
   'dev.static.land' => 2,
   'sites.static.land' => 2,
+  'apps.lair.io' => 2,
+  '*.stolos.io' => 2,
   'spacekit.io' => 2,
   'stackspace.space' => 2,
   'diskstation.me' => 2,
