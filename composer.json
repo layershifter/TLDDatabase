@@ -38,6 +38,7 @@
     }
   },
   "scripts": {
+    "lint": "phpcs --standard=psr2 src/",
     "test": "phpunit"
   }
 }
