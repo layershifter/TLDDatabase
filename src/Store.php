@@ -47,7 +47,7 @@ class Store
     public function __construct($databaseFile = null)
     {
         $databaseFile = null === $databaseFile
-            ? __DIR__ . self::DATABASE_FILE
+            ? __DIR__ . Store::DATABASE_FILE
             : $databaseFile;
 
         if (!file_exists($databaseFile)) {
@@ -108,7 +108,7 @@ class Store
      */
     public function isICCAN($suffix)
     {
-        return $this->getType($suffix) === self::TYPE_ICCAN;
+        return $this->getType($suffix) === Store::TYPE_ICCAN;
     }
 
     /**
@@ -120,6 +120,6 @@ class Store
      */
     public function isPrivate($suffix)
     {
-        return $this->getType($suffix) === self::TYPE_PRIVATE;
+        return $this->getType($suffix) === Store::TYPE_PRIVATE;
     }
 }

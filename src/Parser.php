@@ -72,13 +72,13 @@ final class Parser
         $suffixes = [];
 
         foreach ($this->lines as $line) {
-            if (Str::startsWith($line, self::PRIVATE_DOMAINS_STRING)) {
+            if (Str::startsWith($line, Parser::PRIVATE_DOMAINS_STRING)) {
                 $this->isICCANSuffix = false;
 
                 continue;
             }
 
-            if (Str::startsWith($line, self::COMMENT_STRING_START)) {
+            if (Str::startsWith($line, Parser::COMMENT_STRING_START)) {
                 continue;
             }
 

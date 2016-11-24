@@ -87,7 +87,7 @@ class Update
          * Fetching Public Suffix List and parse suffixes.
          * */
 
-        $lines = $this->httpAdapter->get(self::PUBLIC_SUFFIX_LIST_URL);
+        $lines = $this->httpAdapter->get(Update::PUBLIC_SUFFIX_LIST_URL);
 
         $parser = new Parser($lines);
         $suffixes = $parser->parse();

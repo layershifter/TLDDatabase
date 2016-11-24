@@ -34,8 +34,8 @@ final class CurlAdapter implements AdapterInterface
         curl_setopt($curl, CURLOPT_FOLLOWLOCATION, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-        curl_setopt($curl, CURLOPT_TIMEOUT, self::TIMEOUT);
-        curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, self::TIMEOUT);
+        curl_setopt($curl, CURLOPT_TIMEOUT, CurlAdapter::TIMEOUT);
+        curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, CurlAdapter::TIMEOUT);
 
         // If windows is used, SSL verification will be disabled.
 
