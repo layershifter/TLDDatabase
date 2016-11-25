@@ -19,7 +19,6 @@ use LayerShifter\TLDDatabase\Store;
  */
 class StoreTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * @var Store Object of Store class.
      */

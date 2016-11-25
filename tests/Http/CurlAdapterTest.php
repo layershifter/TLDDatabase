@@ -19,7 +19,6 @@ use LayerShifter\TLDDatabase\Http\CurlAdapter;
  */
 class CurlAdapterTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * @var AdapterInterface Object with CurlAdapter
      */

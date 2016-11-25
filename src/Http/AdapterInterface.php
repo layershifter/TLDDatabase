@@ -17,7 +17,6 @@ use LayerShifter\TLDDatabase\Exceptions\HttpException;
  */
 interface AdapterInterface
 {
-
     /**
      * Fetches Public Suffix List file and returns its content as array of strings.
      *

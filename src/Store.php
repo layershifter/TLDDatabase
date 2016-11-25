@@ -18,7 +18,6 @@ use LayerShifter\TLDDatabase\Exceptions\StoreException;
  */
 class Store
 {
-
     /**
      * @const string Path to database which is supplied with library.
      */

@@ -20,7 +20,6 @@ use LayerShifter\TLDDatabase\Http\CurlAdapter;
  */
 class Update
 {
-
     /**
      * @const string URL to Public Suffix List file.
      */

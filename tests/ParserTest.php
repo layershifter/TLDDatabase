@@ -19,7 +19,6 @@ use LayerShifter\TLDDatabase\Store;
  */
 class ParserTest extends \PHPUnit_Framework_TestCase
 {
-
     /**
      * Test constructor.
      *

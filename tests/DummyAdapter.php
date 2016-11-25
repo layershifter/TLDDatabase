@@ -17,7 +17,6 @@ use LayerShifter\TLDDatabase\Http\AdapterInterface;
  */
 class DummyAdapter implements AdapterInterface
 {
-
     /**
      * @inheritdoc
      */

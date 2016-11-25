@@ -18,7 +18,6 @@ use LayerShifter\TLDSupport\Helpers\Str;
  */
 final class Parser
 {
-
     /**
      * @const string String which shows that the line is a comment.
      */

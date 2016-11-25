@@ -17,7 +17,6 @@ use LayerShifter\TLDDatabase\Exceptions\HttpException;
  */
 final class CurlAdapter implements AdapterInterface
 {
-
     /**
      * @const int Number of seconds for HTTP timeout.
      */
