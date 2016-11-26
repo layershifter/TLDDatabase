@@ -21,6 +21,7 @@ before_script:
 
 script:
   - vendor/bin/phpcs --standard=psr2 src/
+  - vendor/bin/phpmd src text codesize,controversial,design,naming,unusedcode
   - vendor/bin/phpunit -v --coverage-clover ./build/logs/clover.xml
 
 after_success:

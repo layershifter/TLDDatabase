@@ -38,7 +38,9 @@
     }
   },
   "scripts": {
-    "lint": "phpcs --standard=psr2 src/",
+    "lint": "composer lint:cs && composer lint:md",
+    "lint:cs": "phpcs --standard=psr2 src/",
+    "lint:md": "phpmd src text codesize,controversial,design,naming,unusedcode",
     "test": "phpunit"
   }
 }
