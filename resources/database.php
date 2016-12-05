@@ -5218,7 +5218,6 @@ return array (
   'vladikavkaz.ru' => 1,
   'vladimir.ru' => 1,
   'vladivostok.ru' => 1,
-  'volgograd.ru' => 1,
   'vologda.ru' => 1,
   'voronezh.ru' => 1,
   'vrn.ru' => 1,
