@@ -7339,6 +7339,7 @@ return array (
   's3-website.eu-central-1.amazonaws.com' => 2,
   's3-website.us-east-2.amazonaws.com' => 2,
   'on-aptible.com' => 2,
+  'user.party.eus' => 2,
   'pimienta.org' => 2,
   'poivron.org' => 2,
   'potager.org' => 2,
