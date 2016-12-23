@@ -7830,7 +7830,6 @@ return array (
   'gist.githubcloud.com' => 2,
   '*.githubcloudusercontent.com' => 2,
   'gitlab.io' => 2,
-  'ro.com' => 2,
   'ro.im' => 2,
   'shop.ro' => 2,
   'goip.de' => 2,
