@@ -7830,6 +7830,7 @@ return array (
   'gist.githubcloud.com' => 2,
   '*.githubcloudusercontent.com' => 2,
   'gitlab.io' => 2,
+  'homeoffice.gov.uk' => 2,
   'ro.im' => 2,
   'shop.ro' => 2,
   'goip.de' => 2,
@@ -8180,4 +8181,7 @@ return array (
   'za.net' => 2,
   'za.org' => 2,
   'now.sh' => 2,
+  'cc.ua' => 2,
+  'inf.ua' => 2,
+  'ltd.ua' => 2,
 );
