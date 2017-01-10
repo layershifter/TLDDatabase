@@ -8046,6 +8046,7 @@ return array (
   'inc.hk' => 2,
   'lib.de.us' => 2,
   'router.management' => 2,
+  'remotewd.com' => 2,
   'wmflabs.org' => 2,
   'yolasite.com' => 2,
   'ybo.faith' => 2,
