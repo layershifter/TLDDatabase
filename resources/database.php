@@ -8046,6 +8046,7 @@ return array (
   '*.stolos.io' => 2,
   'spacekit.io' => 2,
   'stackspace.space' => 2,
+  'storj.farm' => 2,
   'diskstation.me' => 2,
   'dscloud.biz' => 2,
   'dscloud.me' => 2,
