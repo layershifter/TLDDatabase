@@ -32,7 +32,7 @@ The following versions of PHP are supported.
 
 First of all you need load Store class.
 ```php
-$store = new \LayerShifter\TLDDatabase\Update();
+$store = new \LayerShifter\TLDDatabase\Store();
 ```
 
 For check existence of entry in database you need use `isExists` method:
