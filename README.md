@@ -1,31 +1,45 @@
-# TLDDatabase
+<!-- Logo -->
+<p align="center">
+    <img height="128" width="128" src="https://github.com/layershifter/TLDDatabase/raw/master/logo.png">
+</p>
 
-Abstraction layer for [Public Suffix List](https://publicsuffix.org/) in PHP. Used by [TLDExtract](https://github.com/layershifter/TLDExtract).
+<!-- Name -->
+<h1 align="center">
+  TLDDatabase
+</h1>
 
-[![Build Status](https://travis-ci.org/layershifter/TLDDatabase.svg)](https://travis-ci.org/layershifter/TLDDatabase) [![Code Climate](https://codeclimate.com/github/layershifter/TLDDatabase/badges/gpa.svg)](https://codeclimate.com/github/layershifter/TLDDatabase) [![codecov](https://codecov.io/gh/layershifter/TLDDatabase/branch/master/graph/badge.svg)](https://codecov.io/gh/layershifter/TLDDatabase) [![PHP 7 ready](http://php7ready.timesplinter.ch/layershifter/TLDDatabase/master/badge.svg)](https://travis-ci.org/layershifter/TLDDatabase)
+<!-- Badges -->
+<p align="center">
+  <a href="https://travis-ci.org/layershifter/TLDDatabase">
+    <img alt="Build Status" src="https://travis-ci.org/layershifter/TLDDatabase.svg" />
+  </a>
+  <a href="https://codeclimate.com/github/layershifter/TLDDatabas">
+    <img alt="Code Climate" src="https://codeclimate.com/github/layershifter/TLDDatabase/badges/gpa.svg" />
+  </a>
+  <a href="https://codecov.io/gh/layershifter/TLDDatabase">
+    <img alt="codecov" src="https://codecov.io/gh/layershifter/TLDDatabase/branch/master/graph/badge.svg" />
+  </a>
+</p>
+
+Abstraction layer for [Public Suffix List](https://publicsuffix.org/) in PHP.
+Used by [TLDExtract](https://github.com/layershifter/TLDExtract).
 
 ---
 
-Main idea of library provide easy and fast access to actual database of Public Suffix List. Library always supplied with actual database. 
+Main idea of library provide easy and fast access to actual database of Public Suffix List. Library always supplied with
+actual database. 
 
-This package is compliant with [PSR-1][], [PSR-2][], [PSR-4][]. If you notice compliance oversights, please send a patch via pull request.
-
-## Versioning
-
-Library uses [SemVer](http://semver.org/) versioning. Where:
- - major makes incompatible API changes;
- - minor adds functionality, fully backwards-compatible;
- - patch is update of database from Public Suffix List.
- 
-Database has every week update cycle.
+This package is compliant with [PSR-1][], [PSR-2][], [PSR-4][]. If you notice compliance oversights, please send a patch
+via pull request.
 
 ## Requirements
 
-The following versions of PHP are supported.
+The following versions of PHP are supported:
 
 * PHP 5.5
 * PHP 5.6
 * PHP 7.0
+* PHP 7.1
 * HHVM
 
 ## Basic usage
@@ -37,22 +51,22 @@ $store = new \LayerShifter\TLDDatabase\Store();
 
 For check existence of entry in database you need use `isExists` method:
 ```php
-bool  $store->isExists(string $suffix);
+$store->isExists(string $suffix) : bool;
 
-true  $store->isExists('com');
-false $store->isExists('comcom');
+$store->isExists('com'); // true
+$store->isExists('comcom'); // false
 ``` 
 
-Note: suffix must be without leading dot.
+_Note: suffix must be without leading dot._
 
 For get type of suffix you need use `getType` method:
 
 For check existence of entry in database you need use `isExists` method:
 ```php
-int $store->isExists(string $suffix);
+$store->isExists(string $suffix): int;
 
-int $store->getType('com');
-int $store->getType('s3.amazonaws.com');
+$store->getType('com'); // \LayerShifter\TLDDatabase\Store::TYPE_ICANN = 1
+$store->getType('s3.amazonaws.com'); // \LayerShifter\TLDDatabase\Store::TYPE_PRIVATE = 2
 ```
 
 If entry doesn't exists method will throw exception, else it will return one of integer constants:
@@ -61,15 +75,15 @@ If entry doesn't exists method will throw exception, else it will return one of 
 
 For direct check of type you can use `isICCAN` or `isPrivate` method.
 ```php
-bool  $store->isICCAN(string $suffix);
+$store->isICCAN(string $suffix) : bool;
 
-true  $store->isICCAN('com');
-false $store->isICCAN('s3.amazonaws.com');
+$store->isICCAN('com'); // true
+$store->isICCAN('s3.amazonaws.com'); // false
 
-bool  $store->isPrivate(string $suffix);
+$store->isPrivate(string $suffix) : bool;
 
-true  $store->isPrivate('com');
-false $store->isPrivate('s3.amazonaws.com');
+$store->isPrivate('com'); // false
+$store->isPrivate('s3.amazonaws.com'); // true
 ```
 
 ## Advanced usage
@@ -86,7 +100,7 @@ $store = new \LayerShifter\TLDDatabase\Store(__DIR__ . '/cache/datatabase.php');
 
 #### Update
 
-If you use custom database you need update it ^_^ So, you can can use `Update` class.
+If you use custom database you need update it :wink: So, you can can use `Update` class.
 ```php
 $update = new \LayerShifter\TLDDatabase\Update(string $filename);
 $update = new \LayerShifter\TLDDatabase\Update(__DIR__ . '/cache/datatabase.php');
@@ -119,6 +133,15 @@ $ composer require layershifter/tld-database
 ``` bash
 $ composer test
 ```
+
+## Versioning
+
+Library uses [SemVer](http://semver.org/) versioning. Where:
+ - major makes incompatible API changes;
+ - minor adds functionality, fully backwards-compatible;
+ - patch is update of database from Public Suffix List.
+ 
+Database has every week update cycle.
 
 ## Contributing
 
