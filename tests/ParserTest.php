@@ -89,8 +89,8 @@ class ParserTest extends \PHPUnit_Framework_TestCase
 
         // Test proper assignment of type.
 
-        self::assertEquals(Store::TYPE_ICCAN, $result['ac']);
-        self::assertEquals(Store::TYPE_ICCAN, $result['com.ac']);
+        self::assertEquals(Store::TYPE_ICANN, $result['ac']);
+        self::assertEquals(Store::TYPE_ICANN, $result['com.ac']);
         self::assertEquals(Store::TYPE_PRIVATE, $result['*.compute.estate']);
         self::assertEquals(Store::TYPE_PRIVATE, $result['cloudfront.net']);
     }

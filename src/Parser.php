@@ -30,7 +30,7 @@ final class Parser
     /**
      * @var bool Flags which indicates what type of domain is currently parsed.
      */
-    private $isICCANSuffix = true;
+    private $isICANNSuffix = true;
     /**
      * @var array|string[] Input array of lines from Public Suffix List.
      */
@@ -72,7 +72,7 @@ final class Parser
 
         foreach ($this->lines as $line) {
             if (Str::startsWith($line, Parser::PRIVATE_DOMAINS_STRING)) {
-                $this->isICCANSuffix = false;
+                $this->isICANNSuffix = false;
 
                 continue;
             }
@@ -87,7 +87,7 @@ final class Parser
                 continue;
             }
 
-            $suffixes[$line] = $this->isICCANSuffix ? Store::TYPE_ICCAN : Store::TYPE_PRIVATE;
+            $suffixes[ $line ] = $this->isICANNSuffix ? Store::TYPE_ICANN : Store::TYPE_PRIVATE;
         }
 
         if (count($suffixes) === 0) {

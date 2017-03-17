@@ -27,7 +27,7 @@ Used by [TLDExtract](https://github.com/layershifter/TLDExtract).
 ---
 
 Main idea of library provide easy and fast access to actual database of Public Suffix List. Library always supplied with
-actual database. 
+actual database.
 
 This package is compliant with [PSR-1][], [PSR-2][], [PSR-4][]. If you notice compliance oversights, please send a patch
 via pull request.
@@ -70,15 +70,15 @@ $store->getType('s3.amazonaws.com'); // \LayerShifter\TLDDatabase\Store::TYPE_PR
 ```
 
 If entry doesn't exists method will throw exception, else it will return one of integer constants:
-- ```\LayerShifter\TLDDatabase\Store::TYPE_ICCAN```;
+- ```\LayerShifter\TLDDatabase\Store::TYPE_ICANN```;
 - ```\LayerShifter\TLDDatabase\Store::TYPE_PRIVATE```;
 
-For direct check of type you can use `isICCAN` or `isPrivate` method.
+For direct check of type you can use `isICANN` or `isPrivate` method.
 ```php
-$store->isICCAN(string $suffix) : bool;
+$store->isICANN(string $suffix) : bool;
 
-$store->isICCAN('com'); // true
-$store->isICCAN('s3.amazonaws.com'); // false
+$store->isICANN'com'); // true
+$store->isICANN('s3.amazonaws.com'); // false
 
 $store->isPrivate(string $suffix) : bool;
 
@@ -140,7 +140,7 @@ Library uses [SemVer](http://semver.org/) versioning. Where:
  - major makes incompatible API changes;
  - minor adds functionality, fully backwards-compatible;
  - patch is update of database from Public Suffix List.
- 
+
 Database has every week update cycle.
 
 ## Contributing

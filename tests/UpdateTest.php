@@ -10,7 +10,6 @@
 
 namespace LayerShifter\TLDDatabase\Tests;
 
-
 use LayerShifter\TLDDatabase\Exceptions\IOException;
 use LayerShifter\TLDDatabase\Exceptions\UpdateException;
 use LayerShifter\TLDDatabase\Http\CurlAdapter;

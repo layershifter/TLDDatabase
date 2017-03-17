@@ -23,9 +23,15 @@ class Store
      */
     const DATABASE_FILE = '/../resources/database.php';
     /**
-     * @const int Type that is assigned when a suffix is ICCAN TLD zone.
+     * @const      int Type that is assigned when a suffix is ICANN TLD zone.
+     *
+     * @deprecated This constant is result of a typo, use `TYPE_ICANN` const instead.
      */
     const TYPE_ICCAN = 1;
+    /**
+     * @const int Type that is assigned when a suffix is ICANN TLD zone.
+     */
+    const TYPE_ICANN = 1;
     /**
      * @const int Type that is assigned when a suffix is private domain.
      */
@@ -77,7 +83,7 @@ class Store
     }
 
     /**
-     * Checks type of suffix entry. Returns true if suffix is ICCAN TLD zone.
+     * Checks type of suffix entry. Returns true if suffix is ICANN TLD zone.
      *
      * @param string $suffix Suffix which type will be checked.
      *
@@ -95,19 +101,33 @@ class Store
             ));
         }
 
-        return $this->suffixes[$suffix];
+        return $this->suffixes[ $suffix ];
     }
 
     /**
-     * Checks type of suffix entry. Returns true if suffix is ICCAN TLD zone.
+     * Checks type of suffix entry. Returns true if suffix is ICANN TLD zone.
      *
      * @param string $suffix Suffix which type will be checked.
+     *
+     * @deprecated This method is result of a typo, use `isICANN` const instead
      *
      * @return bool
      */
     public function isICCAN($suffix)
     {
-        return $this->getType($suffix) === Store::TYPE_ICCAN;
+        return $this->isICANN($suffix);
+    }
+
+    /**
+     * Checks type of suffix entry. Returns true if suffix is ICANN TLD zone.
+     *
+     * @param string $suffix Suffix which type will be checked.
+     *
+     * @return bool
+     */
+    public function isICANN($suffix)
+    {
+        return $this->getType($suffix) === Store::TYPE_ICANN;
     }
 
     /**
