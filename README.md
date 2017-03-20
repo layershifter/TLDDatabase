@@ -13,7 +13,7 @@
   <a href="https://travis-ci.org/layershifter/TLDDatabase">
     <img alt="Build Status" src="https://travis-ci.org/layershifter/TLDDatabase.svg" />
   </a>
-  <a href="https://codeclimate.com/github/layershifter/TLDDatabas">
+  <a href="https://codeclimate.com/github/layershifter/TLDDatabase">
     <img alt="Code Climate" src="https://codeclimate.com/github/layershifter/TLDDatabase/badges/gpa.svg" />
   </a>
   <a href="https://codecov.io/gh/layershifter/TLDDatabase">
