@@ -106,9 +106,9 @@ class StoreTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetType()
     {
-        self::assertEquals(Store::TYPE_ICCAN, $this->store->getType('ac'));
-        self::assertEquals(Store::TYPE_ICCAN, $this->store->getType('com.ac'));
-        self::assertEquals(Store::TYPE_ICCAN, $this->store->getType('佛山'));
+        self::assertEquals(Store::TYPE_ICANN, $this->store->getType('ac'));
+        self::assertEquals(Store::TYPE_ICANN, $this->store->getType('com.ac'));
+        self::assertEquals(Store::TYPE_ICANN, $this->store->getType('佛山'));
 
         self::assertEquals(Store::TYPE_PRIVATE, $this->store->getType('appspot.com'));
     }
@@ -125,12 +125,20 @@ class StoreTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test for isICCAN() method.
+     * Test for isICANN() method.
      *
      * @return void
      */
-    public function testIsICCAN()
+    public function testIsICANN()
     {
+        self::assertTrue($this->store->isICANN('ac'));
+        self::assertTrue($this->store->isICANN('com.ac'));
+        self::assertTrue($this->store->isICANN('佛山'));
+
+        self::assertFalse($this->store->isICANN('appspot.com'));
+
+        // Same tests for deprecated isICCAN
+
         self::assertTrue($this->store->isICCAN('ac'));
         self::assertTrue($this->store->isICCAN('com.ac'));
         self::assertTrue($this->store->isICCAN('佛山'));
