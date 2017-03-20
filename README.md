@@ -24,8 +24,6 @@
 Abstraction layer for [Public Suffix List](https://publicsuffix.org/) in PHP.
 Used by [TLDExtract](https://github.com/layershifter/TLDExtract).
 
----
-
 Main idea of library provide easy and fast access to actual database of Public Suffix List. Library always supplied with
 actual database.
 
