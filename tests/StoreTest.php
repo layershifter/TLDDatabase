@@ -136,6 +136,14 @@ class StoreTest extends \PHPUnit_Framework_TestCase
         self::assertTrue($this->store->isICANN('佛山'));
 
         self::assertFalse($this->store->isICANN('appspot.com'));
+
+        // Same tests for deprecated isICCAN
+
+        self::assertTrue($this->store->isICCAN('ac'));
+        self::assertTrue($this->store->isICCAN('com.ac'));
+        self::assertTrue($this->store->isICCAN('佛山'));
+
+        self::assertFalse($this->store->isICCAN('appspot.com'));
     }
 
     /**
