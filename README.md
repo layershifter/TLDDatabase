@@ -10,6 +10,9 @@
 
 <!-- Badges -->
 <p align="center">
+  <a href="https://packagist.org/packages/layershifter/tld-database">
+    <img alt="Packagist.org" src="https://poser.pugx.org/layershifter/tld-database/v/stable" />
+  </a>
   <a href="https://travis-ci.org/layershifter/TLDDatabase">
     <img alt="Build Status" src="https://travis-ci.org/layershifter/TLDDatabase.svg" />
   </a>
