@@ -101,7 +101,7 @@ $store = new \LayerShifter\TLDDatabase\Store(__DIR__ . '/cache/datatabase.php');
 
 #### Update
 
-If you use custom database you need update it :wink: So, you can can use `Update` class.
+If you use custom database you need update it :wink: So, you can use `Update` class.
 ```php
 $update = new \LayerShifter\TLDDatabase\Update(string $filename);
 $update = new \LayerShifter\TLDDatabase\Update(__DIR__ . '/cache/datatabase.php');
