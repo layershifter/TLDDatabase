@@ -352,6 +352,7 @@ return array (
   'art.br' => 1,
   'ato.br' => 1,
   'b.br' => 1,
+  'barueri.br' => 1,
   'belem.br' => 1,
   'bhz.br' => 1,
   'bio.br' => 1,
