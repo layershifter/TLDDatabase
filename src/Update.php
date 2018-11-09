@@ -22,8 +22,9 @@ class Update
 {
     /**
      * @const string URL to Public Suffix List file.
+     * @todo Switch back after https://github.com/publicsuffix/list/issues/724 will be resolved
      */
-    const PUBLIC_SUFFIX_LIST_URL = 'https://publicsuffix.org/list/public_suffix_list.dat';
+    const PUBLIC_SUFFIX_LIST_URL = 'https://raw.githubusercontent.com/publicsuffix/list/master/public_suffix_list.dat';
 
     /**
      * @var AdapterInterface Object of HTTP adapter.
