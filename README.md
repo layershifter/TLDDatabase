@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please use https://github.com/jeremykendall/php-domain-parser.
+
 <!-- Logo -->
 <p align="center">
     <img height="128" width="128" src="https://github.com/layershifter/TLDDatabase/raw/master/logo.png">
